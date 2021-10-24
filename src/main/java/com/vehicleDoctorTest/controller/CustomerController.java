@@ -21,6 +21,7 @@ public class CustomerController {
 	
 	@PostMapping("/customer")
 	public void save(@RequestBody Customer cust) {
+		System.out.println("Git changes");
 		customerService.save(cust);
 	}
 	
